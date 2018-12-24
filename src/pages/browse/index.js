@@ -12,7 +12,7 @@ const Browse = () => (
     <Title>Navegar</Title>
 
     <List>
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2211851590_10.jpg"
           alt="Playlist"
@@ -21,7 +21,7 @@ const Browse = () => (
         <p>Relaxe enquanto ouve rock...</p>
       </Playlist>
 
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2211851590_10.jpg"
           alt="Playlist"
@@ -30,7 +30,7 @@ const Browse = () => (
         <p>Relaxe enquanto ouve rock...</p>
       </Playlist>
 
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2211851590_10.jpg"
           alt="Playlist"
@@ -39,7 +39,7 @@ const Browse = () => (
         <p>Relaxe enquanto ouve rock...</p>
       </Playlist>
 
-      <Playlist href="">
+      <Playlist to="/playlists/1">
         <img
           src="https://f4.bcbits.com/img/a2211851590_10.jpg"
           alt="Playlist"
