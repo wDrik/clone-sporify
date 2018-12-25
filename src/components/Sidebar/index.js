@@ -8,16 +8,19 @@ import { Creators as PlaylistsActions } from '../../store/ducks/playlists';
 
 import { Container, NewPlaylist, Nav } from './styles';
 
+import Loading from '../Loading';
+
 import AddPlayListIcon from '../../assets/images/add_playlist.svg';
 
 class Sidebar extends Component {
   static propTypes = {
     getPlaylistsRequest: PropTypes.func.isRequired,
-    playlist: PropTypes.shape({
+    playlists: PropTypes.shape({
       data: PropTypes.arrayOf(PropTypes.shape({
         id: PropTypes.number,
         title: PropTypes.string,
-      }))
+      })),
+      loading: PropTypes.bool,
     }).isRequired,
   }
 
@@ -31,7 +34,7 @@ class Sidebar extends Component {
         <div>
           <Nav main>
             <li>
-              <a href="http://github.com">Navegar</a>
+              <Link to="/">Navegar</Link>
             </li>
             <li>
               <a href="http://github.com">Radio</a>
@@ -74,6 +77,7 @@ class Sidebar extends Component {
           <Nav>
             <li>
               <span>Playlists</span>
+              {this.props.playlists.loading && <Loading />}
             </li>
             {this.props.playlists.data.map(playlist => (
               <li key={playlist.id}>
