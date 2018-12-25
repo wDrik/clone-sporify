@@ -69,7 +69,6 @@ export const NewPlaylist = styled.button`
 
   &:hover {
     color: #FFF;
-    cursor: pointer;
   }
 
   img {

@@ -60,7 +60,6 @@ export const Header = styled.header`
       margin-top: 10px;
       font-size: 12px;
       letter-spacing: 1.11px;
-      cursor: pointer;
     }
   }
 `;

@@ -21,6 +21,10 @@ const GlobalStyles = createGlobalStyle`
     background: #181818;
     color: #FFF;
   }
+
+  button {
+    cursor: pointer;
+  }
 `;
 
 export default GlobalStyles;
